@@ -2,6 +2,14 @@
 
 - gh-page 에 Vue Awesome 웹 페이지를 개시한다.
 
+## internalization (i18n)
+
+- [How to translate your Vue app with vue i18n](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-vue-app-with-vue-i18n)
+
+```powershell
+vue add i18n
+```
+
 ## gh-page 설정
 
 gh-page 설정 상 {PROJECT_ROOT}/docs 폴더에 npm 빌드한 데이터가 있어야 한다.
