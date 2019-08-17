@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <!-- <div class="app"> -->
+    <router-view></router-view>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -18,5 +20,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-@import '~bootstrap-vue/dist/bootstrap-vue.css';
+/* @import '~bootstrap-vue/dist/bootstrap-vue.css'; */
 </style>

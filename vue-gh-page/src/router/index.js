@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
+const Dashboard = () => import('@/views/Dashboard')
 
 Vue.use(Router)
 
@@ -16,6 +17,13 @@ export default new Router({
       redirect: '/dashboard',
       name: 'home',
       component: DefaultContainer,
+      children: [
+      {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: Dashboard
+        },
+      ]
     }
   ]
 });
