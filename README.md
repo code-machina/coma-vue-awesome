@@ -10,6 +10,14 @@
 vue add i18n
 ```
 
+## post-css 구성
+
+boostrap-vue, boostrap 설정을 위해 아래의 devDependencies 를 설정한다.
+
+```powershell
+npm install sass-loader --save-dev
+```
+
 ## gh-page 설정
 
 gh-page 설정 상 {PROJECT_ROOT}/docs 폴더에 npm 빌드한 데이터가 있어야 한다.

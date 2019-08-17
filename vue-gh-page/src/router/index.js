@@ -4,6 +4,8 @@ import Router from 'vue-router'
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
 const Dashboard = () => import('@/views/Dashboard')
+const Readme = () => import('@/views/Readme')
+// const Page = () => import('@/views/Page')
 
 Vue.use(Router)
 
@@ -14,14 +16,19 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/readme',
       name: 'home',
       component: DefaultContainer,
       children: [
-      {
-          path: 'dashboard',
+        {
+          path: '/dashboard',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: '/readme',
+          name: 'Readme',
+          component: Readme
         },
       ]
     }
